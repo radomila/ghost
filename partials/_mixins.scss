@@ -1,0 +1,14 @@
+@include rounded($radius: 50%) {
+  border-radius: $radius;
+}
+
+@mixin animated($duration: 5s, $length: infinite, $name) {
+  animation: $duration $length $name;
+}
+
+@mixin ghostFeature($width, $height, $background) {
+  @include rounded(50%);
+  width: $width;
+  height: $height;
+  background-color: $background;
+}

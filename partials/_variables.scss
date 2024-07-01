@@ -1,0 +1,19 @@
+// --- COLORS ---
+$main-color: #181e48;
+$ghost-glow-color: #d0a7fe;
+$ghost-body-shadow-color: #dadae1;
+$ghost-cheeks-color: #ff9dc6;
+$ghost-body-color: #ffffff;
+$ghost-eyes-color: #000000;
+$ghost-shadow: #0000008b;
+
+// --- SIZES ---
+$ghost-eye-width: 0.25rem;
+$ghost-eye-height: 0.4rem;
+$ghost-eyes-gap: $ghost-eye-height;
+
+$ghost-cheek-width: $ghost-eye-width;
+$ghost-cheek-height: $ghost-cheek-width;
+
+$ghost-bottom-width: 0.5rem;
+$ghost-bottom-height: $ghost-bottom-width;

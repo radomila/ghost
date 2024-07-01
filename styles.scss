@@ -1,0 +1,79 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/animations';
+
+body {
+  background-color: $main-color;
+}
+
+.ghost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ghost-body {
+  @include animated(levitating);
+  @include rounded(1rem 1rem 0rem 0rem);
+  background-color: $ghost-body-color;
+  width: 2rem;
+  height: 4rem;
+  box-shadow: -3.5px 0px inset $ghost-body-shadow-color,
+    0 0 30px $ghost-glow-color;
+}
+
+.eyes {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: $ghost-eyes-gap;
+  padding-top: 1.15rem;
+}
+
+.eyes-left,
+.eyes-right {
+  @include ghostFeature($ghost-eye-width, $ghost-eye-height, $ghost-eyes-color);
+}
+
+.cheeks {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.25rem;
+}
+
+.cheeks-left,
+.cheeks-right {
+  @include ghostFeature(
+    $ghost-cheek-width,
+    $ghost-cheek-height,
+    $ghost-cheeks-color
+  );
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -0.2rem;
+}
+
+.bottom .semi-circle {
+  @include rounded(0 0 50% 50%);
+  width: $ghost-bottom-width;
+  height: $ghost-bottom-height;
+  background-color: $ghost-body-color;
+}
+
+.bottom .semi-circle:last-child {
+  box-shadow: -3.5px 0px inset $ghost-body-shadow-color;
+}
+
+.shadow {
+  @include rounded(50%);
+  @include animated(moving);
+  width: 2rem;
+  height: 0.3rem;
+  margin-top: 1rem;
+  background-color: $ghost-shadow;
+}

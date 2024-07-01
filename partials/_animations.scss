@@ -1,0 +1,19 @@
+@keyframes levitating {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(0.25rem);
+  }
+}
+
+@keyframes moving {
+  0%,
+  100% {
+    width: 3rem;
+  }
+  50% {
+    width: 1.5rem;
+  }
+}
