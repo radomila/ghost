@@ -10,12 +10,12 @@ This mini-project was created by using HTML and SCSS. The main goal was to train
 - Some variables are nested to avoid repeating the same value multiple times.
 - Variables are descriptive according to their purpose and divided with dashes to separate words in multi-word names.
 
-## Mixins
+### Mixins
 
 - Styles that need to be reused throughout the stylesheet are defined with mixins.
 - Some of the mixins have multiple arguments in order to ensure the best possible reuse.
 
-## Partials
+### Partials
 
 - Code is divided into partials - separate files, which make code much cleaner and easier to manage.
 - Separate partials are created for variables, mixins, and animations.
